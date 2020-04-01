@@ -24,11 +24,37 @@ namespace TP_Module4
         private void Connection_Clicked(object sender, EventArgs e)
         {
             Console.WriteLine("Connection is clicked");
-
-            Boolean hasError = false;
-            StringBuilder messageErrors = new StringBuilder();
             this.messageError.Text = null;
             this.messageError.IsVisible = false;
+            
+            Boolean isRemind = this.memoryInfos.IsToggled;
+
+            string messageError = this.checkConnection();
+            if (messageError != null) 
+            {
+                //Une erreur rencontrée sur formulaire
+                this.messageError.Text = messageError;
+                this.messageError.IsVisible = true;
+            } 
+            else
+            {
+                //Vérification des identifiants
+                if(this.twitterService.authenticate(this.identifiant.Text.ToString(), this.password.Text.ToString()))
+                {
+                    this.form_connection.IsVisible = false;
+                    this.div_tweet.IsVisible = true;
+                } else
+                {
+                    this.messageError.Text = "Identifiants inconnus.";
+                    this.messageError.IsVisible = true;
+                }
+            }
+        }
+
+        private string checkConnection()
+        {
+            Boolean hasError = false;
+            StringBuilder messageErrors = new StringBuilder();
             try
             {
                 if (this.identifiant.Text == null || string.IsNullOrEmpty(this.identifiant.Text.ToString()))
@@ -36,7 +62,7 @@ namespace TP_Module4
                     hasError = true;
                     messageErrors.Append("Veuillez renseigner un identifiant. \n");
                 }
-                else if(this.identifiant.Text.Length < 3)
+                else if (this.identifiant.Text.Length < 3)
                 {
                     hasError = true;
                     messageErrors.Append("Veuillez renseigner un identifiant avec plus de 3 caractères. \n");
@@ -51,29 +77,19 @@ namespace TP_Module4
                     hasError = true;
                     messageErrors.Append("Veuillez renseigner un mot de passe avec plus de 6 caractères. \n");
                 }
-                Boolean isRemind = this.memoryInfos.IsToggled;
-            } catch(Exception exception)
+            }
+            catch (Exception exception)
             {
                 hasError = true;
                 messageErrors.Append(exception.Message);
             }
-            if (hasError)
-            {
-                this.messageError.Text = messageErrors.ToString();
-                this.messageError.IsVisible = true;
+            if (hasError) {
+                return messageErrors.ToString();
             } else
             {
-                if(this.twitterService.authenticate(this.identifiant.Text.ToString(), this.password.Text.ToString()))
-                {
-                    this.form_connection.IsVisible = false;
-                    this.div_tweet.IsVisible = true;
-                } else
-                {
-                    this.messageError.Text = "Identifiants incorrecte.";
-                    this.messageError.IsVisible = true;
-                }
+                return null;
             }
-            
         }
+
     }
 }
