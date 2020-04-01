@@ -13,6 +13,8 @@ namespace TP_Module4
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        private ITwitterService twitterService = new TwitterServiceImpl();
+
         public MainPage()
         {
             InitializeComponent();
@@ -61,8 +63,15 @@ namespace TP_Module4
                 this.messageError.IsVisible = true;
             } else
             {
-                this.form_connection.IsVisible = false;
-                this.div_tweet.IsVisible = true;
+                if(this.twitterService.authenticate(this.identifiant.Text.ToString(), this.password.Text.ToString()))
+                {
+                    this.form_connection.IsVisible = false;
+                    this.div_tweet.IsVisible = true;
+                } else
+                {
+                    this.messageError.Text = "Identifiants incorrecte.";
+                    this.messageError.IsVisible = true;
+                }
             }
             
         }
