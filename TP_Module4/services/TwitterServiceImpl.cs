@@ -25,7 +25,7 @@ namespace TP_Module4
 
         public bool authenticate(string user, string password)
         {
-            if (listUser.ContainsKey(user) && listUser.TryGetValue(user, out password))
+            if (listUser.ContainsKey(user) && listUser[user] == password)
             {
                 return true;
             }
