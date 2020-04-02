@@ -3,32 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:TP_Module4.CardView"
              mc:Ignorable="d"
              x:Class="TP_Module4.DetailsTweet">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Margin="10">
-            <Label Text="Détail d'un tweet" FontSize="25" FontAttributes="Bold" TextColor="#58B0F0" HorizontalOptions="CenterAndExpand" />
-            <Image x:Name="avatar" HorizontalOptions="CenterAndExpand" HeightRequest="200" Aspect="AspectFit"/>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="pseudoUser" HorizontalOptions="CenterAndExpand"  />
-                <Label x:Name="nameUser" HorizontalOptions="CenterAndExpand" />
-            </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <controls:Header/>
+            <StackLayout Margin="10">
+                <Label Text="Détail d'un tweet" FontSize="25" FontAttributes="Bold" TextColor="#58B0F0" HorizontalOptions="CenterAndExpand" />
+                <Image x:Name="avatar" HorizontalOptions="CenterAndExpand" HeightRequest="200" Aspect="AspectFit"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="pseudoUser" HorizontalOptions="CenterAndExpand"  />
+                    <Label x:Name="nameUser" HorizontalOptions="CenterAndExpand" />
+                </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="text" HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="text" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="dateCreation" HorizontalOptions="EndAndExpand" TextColor="LightGray"/>
-            </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="dateCreation" HorizontalOptions="EndAndExpand" TextColor="LightGray"/>
+                </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <ImageButton Source="return.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                <ImageButton Source="retweet.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-                <ImageButton Source="star.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal">
+                    <ImageButton Source="return.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <ImageButton Source="retweet.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                    <ImageButton Source="star.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
             </StackLayout>
-
-            <views:TP_Module4.Footer/>
+            <controls:Footer/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -8,13 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TP_Module4.Footer.xaml", "Footer.xaml", typeof(global::TP_Module4.Footer))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TP_Module4.Footer.xaml", "Footer.xaml", typeof(global::TP_Module4.CardView.Footer))]
 
-namespace TP_Module4 {
+namespace TP_Module4.CardView {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Footer.xaml")]
     public partial class Footer : global::Xamarin.Forms.ContentView {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.ContentView @this;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ImageButton logout;
@@ -22,6 +25,7 @@ namespace TP_Module4 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Footer));
+            @this = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentView>(this, "this");
             logout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ImageButton>(this, "logout");
         }
     }

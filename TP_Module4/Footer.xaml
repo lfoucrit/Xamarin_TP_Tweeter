@@ -5,10 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              HeightRequest="75"
-             x:Class="TP_Module4.Footer">
+             VerticalOptions="EndAndExpand"
+             x:Name="this"
+             Margin="0,0,0,20"
+             x:Class="TP_Module4.CardView.Footer">
   <ContentView.Content>
       
-        <StackLayout Orientation="Horizontal" >
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
             <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#58B0F0"/>
             <Label Text="Notifications" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
             <Label Text="Messages" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>

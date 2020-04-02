@@ -20,7 +20,6 @@ namespace TP_Module4
         public MainPage()
         {
             InitializeComponent();
-            this.logout.IsVisible = false;
             btnConnexion.Clicked += Connection_Clicked;
         }
 

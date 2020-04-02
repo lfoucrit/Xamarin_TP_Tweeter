@@ -16,6 +16,7 @@ namespace TP_Module4
         public DetailsTweet(Tweet tweet)
         {
             InitializeComponent();
+            
             this.tweet = tweet;
             if (tweet != null)
             {

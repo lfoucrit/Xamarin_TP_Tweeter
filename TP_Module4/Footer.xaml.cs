@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TP_Module4
+namespace TP_Module4.CardView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Footer : ContentView

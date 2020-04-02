@@ -8,17 +8,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TP_Module4.Header.xaml", "Header.xaml", typeof(global::TP_Module4.Header))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("TP_Module4.Header.xaml", "Header.xaml", typeof(global::TP_Module4.CardView.Header))]
 
-namespace TP_Module4 {
+namespace TP_Module4.CardView {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Header.xaml")]
     public partial class Header : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.ContentView @this;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Header));
+            @this = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentView>(this, "this");
         }
     }
 }
