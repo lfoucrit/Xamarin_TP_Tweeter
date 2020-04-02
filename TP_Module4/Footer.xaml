@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             HeightRequest="75"
+             x:Class="TP_Module4.Footer">
+  <ContentView.Content>
+      
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#58B0F0"/>
+            <Label Text="Notifications" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Messages" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <Label Text="Moi" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            <ImageButton Source="logout.png" x:Name="logout" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="20" IsVisible="True" Clicked="logout_Clicked"/>
+        </StackLayout>
+      
+    </ContentView.Content>
+</ContentView>

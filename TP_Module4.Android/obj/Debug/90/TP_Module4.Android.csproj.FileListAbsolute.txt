@@ -63,6 +63,7 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\res\mipmap-xxhdpi\icon.pn
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\res\mipmap-xxhdpi\launcher_foreground.png
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\res\mipmap-xxxhdpi\icon.png
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\res\drawable\logout.png
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\uploadflags.txt
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\resolvedassemblies.hash
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
@@ -160,10 +161,10 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\Xamarin.Fo
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\Xamarin.Forms.Platform.dll
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.dll
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\Xamarin.Forms.Xaml.pdb
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.s
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.armeabi-v7a.s
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.s
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.s
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.armeabi-v7a.s
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.s
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\AndroidManifest.xml
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\__environment__.txt
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\mono\MonoRuntimeProvider.java
@@ -171,8 +172,8 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\assets\machine.co
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\bin\mono.android.jar
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\static.flag
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\buildid.txt
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.arm64-v8a.s
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.armeabi-v7a.s
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.arm64-v8a.s
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\android\support\compat\R.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\android\support\coordinatorlayout\R.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\android\support\customtabs\CustomTabsClient_CustomTabsCallbackImpl.java
@@ -373,6 +374,7 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ActivityLifecycleContextListener.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\BarometerListener.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\BatteryBroadcastReceiver.java
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ConnectivityBroadcastReceiver.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\EnergySaverBroadcastReceiver.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\GyroscopeListener.java
@@ -382,6 +384,7 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\SensorListener.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\SingleLocationListener.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\TextToSpeechImplementation.java
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\CustomTabsServiceConnectionImpl.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a98abb514ffad9f1\KeepAliveService.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64cb343e42abbe6d91\MainActivity.java
@@ -444,14 +447,14 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\mono\MonoPack
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\bin\packaged_resources
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\com\companyname\tp_module4\R.java
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.o
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.o
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.armeabi-v7a.o
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.armeabi-v7a.o
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.arm64-v8a.o
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.o
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.o
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.armeabi-v7a.o
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\app_shared_libraries\arm64-v8a\libxamarin-app.so
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\environment.arm64-v8a.o
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\app_shared_libraries\armeabi-v7a\libxamarin-app.so
+E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\app_shared_libraries\arm64-v8a\libxamarin-app.so
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\bin\classes.dex
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_CleanIntermediateIfNuGetsChange.stamp
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_CompileToDalvik.stamp
@@ -461,5 +464,3 @@ E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_ConvertResourcesCa
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\ClipboardChangeListener.java
-E:\Projects\TP_Module4\TP_Module4.Android\obj\Debug\90\android\src\crc64a0e0a82d0db9a07d\WebAuthenticatorCallbackActivity.java

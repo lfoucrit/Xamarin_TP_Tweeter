@@ -7,6 +7,7 @@
              x:Class="TP_Module4.ListeTweets">
 
     <StackLayout Orientation="Vertical">
+        <!-- Start Header to export -->
         <ContentView BackgroundColor="#58B0F0">
             <StackLayout Orientation="Horizontal" Margin="10, 25">
                 <ImageButton Source="pencil.png" WidthRequest="25" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -14,6 +15,7 @@
                 <ImageButton Source="search.png" WidthRequest="25" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
             </StackLayout>
         </ContentView>
+        <!-- End Header to export -->
 
         <Label Text="Liste des tweets" FontSize="25" FontAttributes="Bold" TextColor="#58B0F0" HorizontalOptions="CenterAndExpand" />
         <Label x:Name="nbTweets" HorizontalOptions="CenterAndExpand" TextColor="LightBlue"/>
@@ -49,6 +51,7 @@
             </ContentView>
         </ScrollView>
 
+        <!-- Start Footer to export -->
         <ContentView HeightRequest="75" >
             <StackLayout Orientation="Horizontal" >
                 <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#58B0F0"/>
@@ -58,5 +61,6 @@
                 <ImageButton Source="logout.png" x:Name="logout" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="20" IsVisible="True" Clicked="logout_Clicked"/>
             </StackLayout>
         </ContentView>
+        <!-- End Footer to export -->
     </StackLayout>
 </ContentPage>

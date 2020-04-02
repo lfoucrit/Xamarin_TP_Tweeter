@@ -6,18 +6,29 @@
              mc:Ignorable="d"
              x:Class="TP_Module4.DetailsTweet">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Vertical" Margin="10">
             <Label Text="Détail d'un tweet" FontSize="25" FontAttributes="Bold" TextColor="#58B0F0" HorizontalOptions="CenterAndExpand" />
+            <Image x:Name="avatar" HorizontalOptions="CenterAndExpand" HeightRequest="200" Aspect="AspectFit"/>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="pseudoUser" HorizontalOptions="CenterAndExpand"  />
+                <Label x:Name="nameUser" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
 
             <StackLayout Orientation="Horizontal">
-                <Image x:Name="avatar" HorizontalOptions="StartAndExpand" HeightRequest="200" Aspect="AspectFit"/>
-                <Label x:Name="pseudoUser" HorizontalOptions="StartAndExpand"  />
-                <Label x:Name="nameUser" HorizontalOptions="EndAndExpand" />
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
                 <Label x:Name="text" HorizontalOptions="CenterAndExpand"/>
-                <Label x:Name="dateCreation" HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="dateCreation" HorizontalOptions="EndAndExpand" TextColor="LightGray"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="return.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <ImageButton Source="retweet.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <ImageButton Source="star.png" HeightRequest="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <views:TP_Module4.Footer/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
