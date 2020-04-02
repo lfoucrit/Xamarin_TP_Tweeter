@@ -658,6 +658,9 @@
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\logout.png">
+      <PackagePath>logout.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\pencil.png">
       <PackagePath>pencil.png</PackagePath>
     </AppxPackagedFile>

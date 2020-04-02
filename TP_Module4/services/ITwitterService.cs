@@ -9,6 +9,6 @@ namespace TP_Module4
     public interface ITwitterService
     {
         bool authenticate(string user, string password);
-        ObservableCollection<Tweet> getTweets();
+        List<Tweet> getTweets();
     }
 }

@@ -17,7 +17,7 @@
 
         <ContentView x:Name="form_connection" IsVisible="True">
             <StackLayout Orientation="Vertical" Margin="10">
-                <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" />
+                <Label Text="Connexion à Twitter" FontSize="25" FontAttributes="Bold" TextColor="#58B0F0" HorizontalOptions="CenterAndExpand" />
                 <Entry x:Name="identifiant" Placeholder="Identifiant à Twitter" PlaceholderColor="Gray"/>
                 <Entry x:Name="password" Placeholder="Mot de passe" PlaceholderColor="Gray" IsPassword="True"/>
                 <StackLayout Orientation="Horizontal">
@@ -29,66 +29,13 @@
             </StackLayout>
         </ContentView>
 
-        <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
-            <ContentView x:Name="div_tweet" IsVisible="False">
-                <ListView x:Name="listeTweets">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Margin="10" WidthRequest ="75" Aspect="AspectFit" Source="{Binding user.avatar}"/>
-                                    <StackLayout Orientation="Vertical" Margin="10" HorizontalOptions="FillAndExpand">
-                                        <StackLayout Orientation="Horizontal">
-                                            <Label Text="{Binding user.name}" HorizontalOptions="Start" TextColor="Black"></Label>
-                                            <Label Text="{Binding user.pseudo}" HorizontalOptions="Center" TextColor="Black"></Label>
-                                            <Label Text="{Binding dateCreation}" TextColor="LightGray" HorizontalOptions="EndAndExpand"></Label>
-                                        </StackLayout>
-                                        <StackLayout>
-                                            <Label Text="{Binding text}"></Label>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </StackLayout>
-
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-                
-                <!--<StackLayout Orientation="Vertical" Margin="10">
-                    <StackLayout Orientation="Horizontal">
-                        <StackLayout Orientation="Vertical" Margin="10" VerticalOptions="CenterAndExpand">
-                            <Image Margin="10" WidthRequest ="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"/>
-                        </StackLayout>
-
-                        <StackLayout Orientation="Vertical" Margin="10" HorizontalOptions="StartAndExpand">
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Cedric" HorizontalOptions="Start" TextColor="Black"></Label>
-                                <Label Text="@cedricmillauriaux" HorizontalOptions="Center" TextColor="Black"></Label>
-                                <Label Text="50s" TextColor="LightGray" HorizontalOptions="EndAndExpand"></Label>
-                            </StackLayout>
-                            <StackLayout>
-                                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. "></Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </StackLayout>
-
-                    <StackLayout Orientation="Horizontal">
-                        <ImageButton Source="return.png" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-                        <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-                        <ImageButton Source="star.png" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-                    </StackLayout>
-                </StackLayout>
-                -->
-            </ContentView>
-        </ScrollView>
-
-        <ContentView HeightRequest="75" >
+        <ContentView HeightRequest="75" VerticalOptions="EndAndExpand">
             <StackLayout Orientation="Horizontal" >
                 <Label Text="Fil" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#58B0F0"/>
                 <Label Text="Notifications" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                 <Label Text="Messages" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                 <Label Text="Moi" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <ImageButton Source="logout.png" x:Name="logout" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="20" IsVisible="True"/>
             </StackLayout>
         </ContentView>
     </StackLayout>

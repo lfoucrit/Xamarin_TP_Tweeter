@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-04-02T07:34:11.990</Modified>
+      <Modified>2020-04-02T09:51:14.053</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\TP_Module4.UWP.exe">
       <PackagePath>entrypoint\TP_Module4.UWP.exe</PackagePath>
-      <Modified>2020-04-02T07:34:09.771</Modified>
+      <Modified>2020-04-02T09:51:11.900</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Utilisateur\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -720,7 +720,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4\bin\Debug\netstandard2.0\TP_Module4.dll">
       <PackagePath>TP_Module4.dll</PackagePath>
-      <Modified>2020-04-02T07:42:35.414</Modified>
+      <Modified>2020-04-02T09:54:06.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -869,6 +869,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2020-03-30T13:41:04.620</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\logout.png">
+      <PackagePath>logout.png</PackagePath>
+      <Modified>2020-04-02T09:35:27.816</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\pencil.png">
       <PackagePath>pencil.png</PackagePath>
       <Modified>2020-03-31T08:54:08.486</Modified>
@@ -899,15 +903,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-04-02T07:34:09.461</Modified>
+      <Modified>2020-04-02T09:51:11.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-04-02T07:34:09.462</Modified>
+      <Modified>2020-04-02T09:51:11.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-04-02T07:34:09.462</Modified>
+      <Modified>2020-04-02T09:51:11.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -923,11 +927,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-04-01T13:26:58.234</Modified>
+      <Modified>2020-04-02T09:39:50.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Projects\TP_Module4\TP_Module4.UWP\bin\x86\Debug\Core\TP_Module4.UWP.exe">
       <PackagePath>TP_Module4.UWP.exe</PackagePath>
-      <Modified>2020-04-02T07:34:11.981</Modified>
+      <Modified>2020-04-02T09:51:14.047</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

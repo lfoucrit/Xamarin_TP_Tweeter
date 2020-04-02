@@ -12,3 +12,5 @@ E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\TP_Module4.dll
 E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\ref\TP_Module4.dll
 E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\TP_Module4.pdb
 E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\TP_Module4.csprojAssemblyReference.cache
+E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\DetailsTweet.xaml.g.cs
+E:\Projects\TP_Module4\TP_Module4\obj\Debug\netstandard2.0\ListeTweets.xaml.g.cs

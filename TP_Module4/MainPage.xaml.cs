@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
+using TP_Module4.models;
 
 namespace TP_Module4
 {
@@ -19,8 +20,8 @@ namespace TP_Module4
         public MainPage()
         {
             InitializeComponent();
+            this.logout.IsVisible = false;
             btnConnexion.Clicked += Connection_Clicked;
-            this.listeTweets.ItemsSource = twitterService.getTweets();
         }
 
         private void Connection_Clicked(object sender, EventArgs e)
@@ -50,8 +51,7 @@ namespace TP_Module4
                 //Vérification des identifiants
                 if(this.twitterService.authenticate(this.identifiant.Text.ToString(), this.password.Text.ToString()))
                 {
-                    this.form_connection.IsVisible = false;
-                    this.div_tweet.IsVisible = true;
+                    successConnection();
                 } else
                 {
                     this.messageError.Text = "Identifiants inconnus.";
@@ -59,7 +59,7 @@ namespace TP_Module4
                 }
             }
         }
-
+      
         private string checkConnection()
         {
             Boolean hasError = false;
@@ -99,6 +99,9 @@ namespace TP_Module4
                 return null;
             }
         }
-
+        private async void successConnection()
+        {
+            await Navigation.PushAsync(new ListeTweets());
+        }
     }
 }
