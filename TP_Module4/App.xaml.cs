@@ -9,7 +9,6 @@ namespace TP_Module4
         public App()
         {
             InitializeComponent();
-
             MainPage = new MainPage();
         }
 

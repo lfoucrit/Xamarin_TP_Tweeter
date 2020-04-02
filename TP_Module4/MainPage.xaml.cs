@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace TP_Module4
 {
@@ -19,6 +20,7 @@ namespace TP_Module4
         {
             InitializeComponent();
             btnConnexion.Clicked += Connection_Clicked;
+            this.listeTweets.ItemsSource = twitterService.getTweets();
         }
 
         private void Connection_Clicked(object sender, EventArgs e)
@@ -26,8 +28,15 @@ namespace TP_Module4
             Console.WriteLine("Connection is clicked");
             this.messageError.Text = null;
             this.messageError.IsVisible = false;
-            
+
             Boolean isRemind = this.memoryInfos.IsToggled;
+
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                this.messageError.Text = "La connexion internet est indisponible";
+                this.messageError.IsVisible = true;
+                return;
+            }
 
             string messageError = this.checkConnection();
             if (messageError != null) 

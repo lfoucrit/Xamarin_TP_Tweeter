@@ -31,7 +31,31 @@
 
         <ScrollView HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
             <ContentView x:Name="div_tweet" IsVisible="False">
-                <StackLayout Orientation="Vertical" Margin="10">
+                <ListView x:Name="listeTweets">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Margin="10" WidthRequest ="75" Aspect="AspectFit" Source="{Binding user.avatar}"/>
+                                    <StackLayout Orientation="Vertical" Margin="10" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding user.name}" HorizontalOptions="Start" TextColor="Black"></Label>
+                                            <Label Text="{Binding user.pseudo}" HorizontalOptions="Center" TextColor="Black"></Label>
+                                            <Label Text="{Binding dateCreation}" TextColor="LightGray" HorizontalOptions="EndAndExpand"></Label>
+                                        </StackLayout>
+                                        <StackLayout>
+                                            <Label Text="{Binding text}"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+                <!--<StackLayout Orientation="Vertical" Margin="10">
                     <StackLayout Orientation="Horizontal">
                         <StackLayout Orientation="Vertical" Margin="10" VerticalOptions="CenterAndExpand">
                             <Image Margin="10" WidthRequest ="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"/>
@@ -55,6 +79,7 @@
                         <ImageButton Source="star.png" WidthRequest="25" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
                     </StackLayout>
                 </StackLayout>
+                -->
             </ContentView>
         </ScrollView>
 

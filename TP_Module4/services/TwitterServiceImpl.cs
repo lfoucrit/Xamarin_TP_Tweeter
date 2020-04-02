@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Module4.models;
+using Xamarin.Forms;
 
 namespace TP_Module4
 {
@@ -30,16 +32,18 @@ namespace TP_Module4
             return false;
         }
 
-        public List<Tweet> getTweet()
+        public ObservableCollection<Tweet> getTweets()
         {
-            List<Tweet> tweets = new List<Tweet>
-            {
-                new Tweet{ dateCreation ="Mercredi 01/04/2020 11:25", identifiant="1", nameUser="Simon", pseudoUser="slimon", text="Un tweet pour commencer"},
-                new Tweet{ dateCreation ="Mardi 31/03/2020 22:01", identifiant="2", nameUser="Damien", pseudoUser="dponchet", text="Un tweet"},
-                new Tweet{ dateCreation ="Mardi 31/03/2020 22:29", identifiant="3", nameUser="Damien", pseudoUser="dponchet", text="Un autre tweet"},
-                new Tweet{ dateCreation ="Mardi 31/03/2020 23:45", identifiant="4", nameUser="Damien", pseudoUser="dponchet", text="Et encore un autre tweet"},
-                new Tweet{ dateCreation ="Mardi 01/04/2020 10:33", identifiant="5", nameUser="Cédric", pseudoUser="cedirmillauriaux", text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. "}
-            };
+            User user1 = new User { identifiant = 1, name = "Simon", pseudo = "@slimon", avatar = ImageSource.FromUri(new Uri("https://picsum.photos/50/50/?random")) };
+            User user2 = new User { identifiant = 2, name = "Damien", pseudo = "@dponchet", avatar = ImageSource.FromUri(new Uri("https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg")) };
+            User user3 = new User { identifiant = 3, name = "Cédric", pseudo = "@cedricmillauriaux", avatar = ImageSource.FromUri(new Uri("https://picsum.photos/50/50/?random")) };
+
+            ObservableCollection <Tweet> tweets = new ObservableCollection<Tweet>();
+            tweets.Add(new Tweet { dateCreation = "Mercredi 01/04/2020 11:25", identifiant = "1", user= user1, text = "Un tweet pour commencer" });
+            tweets.Add(new Tweet { dateCreation = "Mardi 31/03/2020 22:01", identifiant = "2", user =user2, text = "Un tweet" });
+            tweets.Add(new Tweet { dateCreation = "Mardi 31/03/2020 22:29", identifiant = "3", user = user2, text = "Un autre tweet" });
+            tweets.Add(new Tweet { dateCreation = "Mardi 31/03/2020 23:45", identifiant = "4", user = user2, text = "Et encore un autre tweet" });
+            tweets.Add(new Tweet { dateCreation = "Mercredi 01/04/2020 10:33", identifiant = "5", user = user3, text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. " });
             return tweets;
         }
     }

@@ -9,7 +9,6 @@ namespace TP_Module4.models
         public string identifiant { get; set; }
         public string dateCreation { get; set; }
         public string text { get; set; }
-        public string nameUser { get; set; }
-        public string pseudoUser { get; set; }
+        public User user { get; set; }
     }
 }
